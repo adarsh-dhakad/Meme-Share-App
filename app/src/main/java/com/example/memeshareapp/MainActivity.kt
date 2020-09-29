@@ -49,7 +49,7 @@ private  fun loadMeme(){
             // Display the first 500 characters of the response string.
        //   textView.text = "Response is: ${response.substring(0, 500)}"
            val postLink:String? = response.getString("postLink")
-            postlinkText.text= "post link is this $postLink"
+        //    postlinkText.text= "post link is this $postLink"
         currentImageUrl = response.getString("url")
             Glide.with(this).load(currentImageUrl).listener(object: RequestListener<Drawable>{
 
